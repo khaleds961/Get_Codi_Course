@@ -13,10 +13,7 @@ a {
   border-style: solid;
   border-color: white white white blue;
 }
-p:nth-child(1) {
-  opacity: 0.5;
-}
 
-.message {
-  line-height: 50px;
+.message__content:first-child {
+  opacity: 0.5;
 }
