@@ -1,1 +1,27 @@
 /* Write your media queries and flexbox CSS below */
+@media (min-width: 992px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  nav {
+    display: flex;
+  }
+  header {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 699px) {
+  nav {
+    display: flex;
+  }
+}
