@@ -12,12 +12,12 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
-        <div class="site-header__title">C.Y.F</div>
+      <header class="site-header">
+        <h1 class="site-header__title">Codi</h1>
         <div class="main-nav">
-          <ul class="main-nav__list">
+          <nav class="main-nav__list">
             <li class="main-nav__list-item">
-              <a href="index.html">Latest</a>
+              <a href="index.html" class="main-nav__list-item">Latest</a>
             </li>
             <li class="main-nav__list-item">
               <a href="about.html">About</a>
@@ -25,7 +25,7 @@
             <li class="main-nav__list-item">
               <a href="contact.html">Contact</a>
             </li>
-          </ul>
+          </nav>
         </div>
         <form class="site-search" action="/search">
           <label for="search-input">
@@ -48,21 +48,37 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
         <p>Send us an email if you would like to contact us.</p>
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <fieldset>
+              <legend>What branch are you interested in:</legend>
+              <label> <input type="radio" /> Tripoli </label><br /><br />
+              <label> <input type="radio" /> Beirut </label><br /><br />
+              <label> <input type="radio" /> Sour </label><br /><br />
+            </fieldset>
           </div>
           <div class="contact-form__field">
-            <textarea
-              name="message"
-              placeholder="Your message should not be longer than 200 words."
-            ></textarea>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="contact-form__field">
+            <label
+              >Message
+              <textarea
+                name="message"
+                placeholder="Your message should not be longer than 200 words."
+                required
+              ></textarea>
+            </label>
           </div>
           <button type="submit">Send</button>
         </form>
@@ -74,7 +90,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="heart">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg
